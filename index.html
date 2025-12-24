@@ -1,117 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dany Romaric Koumba-Nzassi - Portfolio</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <section class="header-content">
-            <h1>Dany Romaric Koumba-Nzassi</h1>
-            <p>Systems & Networks Engineer | IT Support Specialist</p>
-            <div class="contact-info">
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Dany Romaric Koumba-Nzassi</h1>
+            <p class="lead">Systems & Networks Engineer | IT Support Specialist</p>
+            <div>
                 <p><strong>Location:</strong> Pointe-Noire, Congo</p>
-                <p><strong>Email:</strong> <a href="mailto:danyKoumba8@gmail.com">danyKoumba8@gmail.com</a></p>
-                <p><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/dany" target="_blank">LinkedIn Profile</a></p>
+                <p><strong>Email:</strong> <a href="mailto:danyKoumba8@gmail.com" class="text-white">danyKoumba8@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/dany" target="_blank" class="text-white">LinkedIn Profile</a></p>
             </div>
-        </section>
+        </div>
     </header>
 
-    <main>
-        <section class="profile-summary">
-            <h2>About Me</h2>
-            <p>I hold a <strong>Professional Bachelor's Degree in Networks & Telecommunications</strong>, specializing in <strong>systems, networks, and IT support</strong>. I'm motivated, adaptable, and eager to grow my skills in dynamic IT environments.</p>
+    <main class="container my-5">
+        <section class="profile-summary mb-5">
+            <h2>À Propos de Moi</h2>
+            <p>Je suis titulaire d’une <strong>Licence Professionnelle en Réseaux & Télécommunications</strong>, spécialisé dans les
+                <strong>systèmes, réseaux et support IT</strong>. Passionné par l'optimisation et l'évolution des systèmes
+                informatiques, je cherche à approfondir mes compétences et à contribuer à des projets de grande envergure.</p>
         </section>
 
-        <section class="professional-experience">
-            <h2>Professional Experience</h2>
+        <section class="professional-experience mb-5">
+            <h2>Expérience Professionnelle</h2>
 
-            <article>
+            <article class="mb-4">
                 <h3>Freelance Systems & Networks Engineer</h3>
-                <p><strong>DRAW CONCEPT</strong> — Pointe-Noire <span class="date">10/2025 – 11/2025</span></p>
+                <p><strong>DRAW CONCEPT</strong> — Pointe-Noire <span class="text-muted">10/2025 – 11/2025</span></p>
                 <ul>
-                    <li>Redesigned and optimized a LAN network.</li>
-                    <li>Troubleshot and fixed <strong>TrueNAS NAS</strong> (group settings, permissions, user configurations).</li>
-                    <li>Resolved issues on a <strong>Dell PowerEdge T140</strong> server.</li>
+                    <li>Redesign et optimisation du réseau LAN.</li>
+                    <li>Dépannage d’un NAS <strong>TrueNAS</strong> (groupes, permissions, utilisateurs).</li>
+                    <li>Réparation d’un serveur <strong>Dell PowerEdge T140</strong>.</li>
                 </ul>
             </article>
 
-            <article>
-                <h3>Project Engineering Intern – Networks & Telecoms</h3>
-                <p><strong>Congo Telecom</strong> — Pointe-Noire <span class="date">05/2025 – 11/2025</span></p>
+            <article class="mb-4">
+                <h3>Stagiaire Ingénierie de Projet – Réseaux & Télécoms</h3>
+                <p><strong>Congo Telecom</strong> — Pointe-Noire <span class="text-muted">05/2025 – 11/2025</span></p>
                 <ul>
-                    <li>Led planning and management of <strong>FTTx</strong> projects.</li>
-                    <li>Configured <strong>ONTs</strong> for internet access.</li>
-                    <li>Managed project databases, documentation, and reporting.</li>
-                    <li>Conducted network performance testing and quality analysis.</li>
+                    <li>Planification et gestion de projets <strong>FTTx</strong>.</li>
+                    <li>Configuration des <strong>ONT</strong> pour accès internet.</li>
+                    <li>Gestion des bases de données et reporting sur le projet.</li>
+                    <li>Tests de performance et analyse qualité du réseau.</li>
                 </ul>
             </article>
 
-            <article>
-                <h3>Systems & Networks Admin Intern</h3>
-                <p><strong>Neptween Congo</strong> — Pointe-Noire <span class="date">01/2024 – 05/2024</span></p>
+            <article class="mb-4">
+                <h3>Stagiaire Administration Systèmes & Réseaux</h3>
+                <p><strong>Neptween Congo</strong> — Pointe-Noire <span class="text-muted">01/2024 – 05/2024</span></p>
                 <ul>
-                    <li>Installed, updated, and maintained software systems.</li>
-                    <li>Handled network cabling and user support (OS and applications).</li>
-                    <li>Configured routers, switches, and servers.</li>
-                    <li>Administered <strong>Windows Server & Ubuntu Server</strong> environments.</li>
-                    <li>Designed network architectures and simulations.</li>
+                    <li>Installation, mise à jour et maintenance des logiciels.</li>
+                    <li>Support aux utilisateurs (OS et applications).</li>
+                    <li>Configuration des routeurs, switchs, serveurs.</li>
+                    <li>Administration des systèmes <strong>Windows Server</strong> et <strong>Ubuntu Server</strong>.</li>
+                    <li>Conception d'architectures réseau et simulations.</li>
                 </ul>
             </article>
         </section>
 
-        <section class="education">
-            <h2>Education</h2>
+        <section class="education mb-5">
+            <h2>Formation</h2>
             <ul>
-                <li><strong>IPv6 Training</strong> — France Université Numérique (10/2023)</li>
-                <li><strong>Professional Bachelor's in Networks & Telecommunications</strong> — École Africaine de Développement (07/2023)</li>
-                <li><strong>Technological Baccalaureate in Electrotechnics</strong> — Lycée Technique Poaty Bernard (2019)</li>
+                <li><strong>Formation IPv6</strong> — France Université Numérique (10/2023)</li>
+                <li><strong>Licence Professionnelle Réseaux & Télécoms</strong> — École Africaine de Développement (07/2023)</li>
+                <li><strong>Baccalauréat Technologique Électrotechnique</strong> — Lycée Technique Poaty Bernard (2019)</li>
             </ul>
         </section>
 
-        <section class="languages">
-            <h2>Languages</h2>
+        <section class="languages mb-5">
+            <h2>Langues</h2>
             <ul>
-                <li><strong>French</strong>: Native</li>
-                <li><strong>English</strong>: Advanced</li>
+                <li><strong>Français</strong>: Langue maternelle</li>
+                <li><strong>Anglais</strong>: Niveau avancé</li>
             </ul>
         </section>
 
-        <section class="skills">
-            <h2>Skills</h2>
-            <h3>Systems & Monitoring</h3>
+        <section class="skills mb-5">
+            <h2>Compétences</h2>
+            <h3>Systèmes & Monitoring</h3>
             <ul>
                 <li>Windows Server (AD, GPO, DHCP, DNS)</li>
                 <li>Linux (Debian, Ubuntu)</li>
-                <li>Zabbix (Monitoring)</li>
-                <li>Bash (Simple scripting)</li>
-                <li>AWS (Free Tier VMs)</li>
-                <li>SQL (Solid understanding)</li>
+                <li>Zabbix (Supervision des serveurs et clients)</li>
+                <li>Bash (Scripts simples)</li>
+                <li>AWS (Free Tier VM)</li>
+                <li>SQL (Bonnes connaissances)</li>
             </ul>
 
-            <h3>Networking & Telecoms</h3>
+            <h3>Réseaux & Télécoms</h3>
             <ul>
                 <li>LAN, VLAN, NAS, ONT</li>
                 <li>GNS3, Packet Tracer</li>
-                <li>VirtualBox, VMware</li>
+                <li>VirtualBox, VMware, MobaXterm</li>
                 <li>TCP/IP, DNS, DHCP, SSH, HTTP/HTTPS</li>
                 <li>IPv4/IPv6, NAT, SSL/TLS</li>
-                <li>Cisco Routing & Switching</li>
+                <li>Principes de Cisco (Routage, Switching)</li>
             </ul>
         </section>
 
-        <section class="next-steps">
-            <h2>Next Steps</h2>
-            <p>Check out my ongoing projects on GitHub and stay tuned for my focus on <strong>cybersecurity</strong>, <strong>sysadmin</strong>, and <strong>Python development</strong>.</p>
+        <section class="next-steps mb-5">
+            <h2>Prochaines Étapes</h2>
+            <p>Je continue de travailler sur mes projets GitHub et me concentre sur l’expansion de mes compétences en
+                <strong>cybersécurité</strong>, <strong>administration système</strong> et <strong>développement Python</strong>.</p>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Dany Romaric Koumba-Nzassi. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-4">
+        <p>© 2025 Dany Romaric Koumba-Nzassi. Tous droits réservés.</p>
     </footer>
 
+    <!-- Lien vers Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
