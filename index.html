@@ -1,28 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
-
-    <!-- Ajouter Bootstrap CSS via CDN -->
+    <!-- Lien vers Bootstrap pour un design rapide et moderne -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Ajouter un peu de style personnalisé si nécessaire -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
 </head>
-
 <body>
 
-    <!-- En-tête -->
-    <header class="bg-primary text-white text-center py-4">
+    <!-- Header (Navigation) -->
+    <header class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1>Bienvenue sur mon Portfolio</h1>
             <nav>
                 <ul class="nav justify-content-center">
                     <li class="nav-item"><a class="nav-link text-white" href="#about">À propos</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#experience">Expérience</a></li>
                     <li class="nav-item"><a class="nav-link text-white" href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -33,44 +29,59 @@
     <section id="about" class="container py-5">
         <h2>À propos de moi</h2>
         <p>
-            Titulaire d'une Licence Professionnelle en Réseaux et Télécommunications, je développe continuellement mes compétences dans les domaines des systèmes et réseaux, du support IT. Curieux, motivé et adaptable, je suis capable de m'épanouir dans un environnement anglophone. Mon objectif est d'acquérir de nouvelles connaissances et compétences dans les systèmes informatiques, les réseaux et le support IT.
+            Je suis un professionnel passionné par les systèmes et réseaux, titulaire d'une Licence Professionnelle en Réseaux et Télécommunications. Mon objectif est de développer mes compétences dans l'informatique, les réseaux et le support IT.
         </p>
-        <h3>Freelance en systèmes et réseaux</h3>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="container py-5">
+        <h2>Compétences Techniques</h2>
         <ul>
-            <li>Refonte d'un réseau LAN</li>
-            <li>Dépannage d'un NAS (TrueNAS) : ajout des groupes, des permissions et des utilisateurs</li>
-            <li>Dépannage d'un serveur Dell PowerEdge T140</li>
+            <li><strong>Windows Server</strong> (Active Directory, DHCP, DNS)</li>
+            <li><strong>Linux</strong> (Ubuntu, Debian, gestion des permissions et groupes)</li>
+            <li><strong>Réseau et Télécom</strong> (LAN, VLAN, NAS, ONT, Cisco)</li>
+            <li><strong>Outils de supervision</strong> (Zabbix, Wazuh)</li>
         </ul>
     </section>
 
-    <!-- Section Projets -->
-    <section id="projects" class="container py-5">
-        <h2>Mes projets</h2>
-        <p>Voici quelques-uns de mes projets récents :</p>
-        <ul>
-            <li><a href="#">Projet 1 - Refonte réseau LAN</a></li>
-            <li><a href="#">Projet 2 - Dépannage NAS TrueNAS</a></li>
-            <li><a href="#">Projet 3 - Maintenance serveur Dell PowerEdge</a></li>
-        </ul>
+    <!-- Section Expérience -->
+    <section id="experience" class="container py-5">
+        <h2>Expériences Professionnelles</h2>
+        <div>
+            <h3>Freelance en systèmes et réseaux</h3>
+            <p><strong>DRAW CONCEPT</strong>, Pointe-Noire, Congo (Octobre 2025 - Novembre 2025)</p>
+            <ul>
+                <li>Refonte d'un réseau LAN</li>
+                <li>Dépannage d'un NAS (TrueNAS)</li>
+                <li>Dépannage d'un serveur Dell PowerEdge T140</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Stagiaire en Ingénierie de Projet - Réseaux et Télécommunications</h3>
+            <p><strong>Congo Telecom</strong>, Pointe-Noire, Congo (Mai 2025 - Novembre 2025)</p>
+            <ul>
+                <li>Participation à la planification de projets FTTx</li>
+                <li>Paramétrage ONT pour l'accès à Internet</li>
+                <li>Gestion de la base de données pour le suivi du projet</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Section Contact -->
     <section id="contact" class="container py-5">
         <h2>Contact</h2>
-        <p>Email : ton.email@example.com</p>
+        <p>Email : <a href="mailto:danyKoumba8@gmail.com">danyKoumba8@gmail.com</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/dany" target="_blank">Mon profil LinkedIn</a></p>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Mon Portfolio</p>
+        <p>&copy; 2025 Dany Romaric Koumba-Nzassi</p>
     </footer>
 
-    <!-- Ajouter Bootstrap JS et Popper.js via CDN pour interactivité -->
+    <!-- Ajout de JavaScript pour les animations et le défilement fluide -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-
-    <!-- Ajouter ton propre JavaScript ici -->
     <script src="script.js"></script>
 </body>
-
 </html>
