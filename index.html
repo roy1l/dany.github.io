@@ -7,10 +7,13 @@
     <title>Dany Romaric Koumba-Nzassi - Portfolio</title>
     <!-- Lien vers Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers Semantic UI CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+    <!-- Header avec image de profil et informations -->
     <header class="bg-primary text-white text-center py-5">
         <div class="container">
             <h1 class="display-4">Dany Romaric Koumba-Nzassi</h1>
@@ -23,15 +26,45 @@
         </div>
     </header>
 
+    <!-- Barre de navigation avec onglets -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Expérience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#realisation">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section principale -->
     <main class="container my-5">
-        <section class="profile-summary mb-5">
+        <!-- Section À propos -->
+        <section id="about" class="profile-summary mb-5">
             <h2>À Propos de Moi</h2>
             <p>Je suis titulaire d’une <strong>Licence Professionnelle en Réseaux & Télécommunications</strong>, spécialisé dans les
                 <strong>systèmes, réseaux et support IT</strong>. Passionné par l'optimisation et l'évolution des systèmes
                 informatiques, je cherche à approfondir mes compétences et à contribuer à des projets de grande envergure.</p>
         </section>
 
-        <section class="professional-experience mb-5">
+        <!-- Section Expérience -->
+        <section id="experience" class="professional-experience mb-5">
             <h2>Expérience Professionnelle</h2>
 
             <article class="mb-4">
@@ -44,82 +77,73 @@
                 </ul>
             </article>
 
-            <article class="mb-4">
-                <h3>Stagiaire Ingénierie de Projet – Réseaux & Télécoms</h3>
-                <p><strong>Congo Telecom</strong> — Pointe-Noire <span class="text-muted">05/2025 – 11/2025</span></p>
-                <ul>
-                    <li>Planification et gestion de projets <strong>FTTx</strong>.</li>
-                    <li>Configuration des <strong>ONT</strong> pour accès internet.</li>
-                    <li>Gestion des bases de données et reporting sur le projet.</li>
-                    <li>Tests de performance et analyse qualité du réseau.</li>
-                </ul>
-            </article>
+            <!-- Autres expériences -->
 
-            <article class="mb-4">
-                <h3>Stagiaire Administration Systèmes & Réseaux</h3>
-                <p><strong>Neptween Congo</strong> — Pointe-Noire <span class="text-muted">01/2024 – 05/2024</span></p>
-                <ul>
-                    <li>Installation, mise à jour et maintenance des logiciels.</li>
-                    <li>Support aux utilisateurs (OS et applications).</li>
-                    <li>Configuration des routeurs, switchs, serveurs.</li>
-                    <li>Administration des systèmes <strong>Windows Server</strong> et <strong>Ubuntu Server</strong>.</li>
-                    <li>Conception d'architectures réseau et simulations.</li>
-                </ul>
-            </article>
         </section>
 
-        <section class="education mb-5">
-            <h2>Formation</h2>
-            <ul>
-                <li><strong>Formation IPv6</strong> — France Université Numérique (10/2023)</li>
-                <li><strong>Licence Professionnelle Réseaux & Télécoms</strong> — École Africaine de Développement (07/2023)</li>
-                <li><strong>Baccalauréat Technologique Électrotechnique</strong> — Lycée Technique Poaty Bernard (2019)</li>
-            </ul>
+        <!-- Section Réalisations -->
+        <section id="realisation" class="realisation mb-5">
+            <h2>Réalisations</h2>
+            <div class="ui four cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="img/projet1.png" alt="Projet 1">
+                    </div>
+                    <div class="content">
+                        <a class="header" href="#">Projet 1</a>
+                        <div class="meta">
+                            <span class="date">2024</span>
+                        </div>
+                        <div class="description">
+                            Description du projet réalisé avec des technologies comme Docker et Kubernetes pour la gestion des containers.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="img/projet2.png" alt="Projet 2">
+                    </div>
+                    <div class="content">
+                        <a class="header" href="#">Projet 2</a>
+                        <div class="meta">
+                            <span class="date">2025</span>
+                        </div>
+                        <div class="description">
+                            Développement d'une application web avec Flask pour la gestion des utilisateurs et des permissions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Autres projets -->
+
+            </div>
         </section>
 
-        <section class="languages mb-5">
-            <h2>Langues</h2>
-            <ul>
-                <li><strong>Français</strong>: Langue maternelle</li>
-                <li><strong>Anglais</strong>: Niveau avancé</li>
-            </ul>
-        </section>
-
-        <section class="skills mb-5">
+        <!-- Section Compétences -->
+        <section id="skills" class="skills mb-5">
             <h2>Compétences</h2>
             <h3>Systèmes & Monitoring</h3>
             <ul>
                 <li>Windows Server (AD, GPO, DHCP, DNS)</li>
                 <li>Linux (Debian, Ubuntu)</li>
                 <li>Zabbix (Supervision des serveurs et clients)</li>
-                <li>Bash (Scripts simples)</li>
-                <li>AWS (Free Tier VM)</li>
-                <li>SQL (Bonnes connaissances)</li>
             </ul>
-
             <h3>Réseaux & Télécoms</h3>
             <ul>
                 <li>LAN, VLAN, NAS, ONT</li>
                 <li>GNS3, Packet Tracer</li>
-                <li>VirtualBox, VMware, MobaXterm</li>
-                <li>TCP/IP, DNS, DHCP, SSH, HTTP/HTTPS</li>
-                <li>IPv4/IPv6, NAT, SSL/TLS</li>
-                <li>Principes de Cisco (Routage, Switching)</li>
             </ul>
         </section>
 
-        <section class="next-steps mb-5">
-            <h2>Prochaines Étapes</h2>
-            <p>Je continue de travailler sur mes projets GitHub et me concentre sur l’expansion de mes compétences en
-                <strong>cybersécurité</strong>, <strong>administration système</strong> et <strong>développement Python</strong>.</p>
-        </section>
     </main>
 
+    <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4">
         <p>© 2025 Dany Romaric Koumba-Nzassi. Tous droits réservés.</p>
     </footer>
 
-    <!-- Lien vers Bootstrap JS -->
+    <!-- Lien vers Bootstrap JS et Popper -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
